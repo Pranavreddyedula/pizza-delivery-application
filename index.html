@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Pizza Delivery Application</h1>
+</header>
+
+<main>
+    <!-- LOGIN -->
+    <section id="login">
+        <h2>User Login</h2>
+        <form id="userLoginForm">
+            <input type="email" value="user@gmail.com" required>
+            <input type="password" value="user123" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <h2>Admin Login</h2>
+        <form id="adminLoginForm">
+            <input type="email" value="admin@gmail.com" required>
+            <input type="password" value="admin123" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section id="registration">
+        <h2>User Registration</h2>
+        <form id="registrationForm">
+            <input type="text" value="Pranav" required>
+            <input type="email" value="pranav@gmail.com" required>
+            <input type="password" value="pranav123" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section id="dashboard">
+        <h2>Available Pizzas</h2>
+        <div id="pizzaVarieties"></div>
+        <button id="customPizzaBtn">Create Custom Pizza</button>
+    </section>
+
+    <!-- CUSTOM PIZZA -->
+    <section id="customPizza">
+        <h2>Customize Your Pizza</h2>
+        <form id="customPizzaForm">
+            <select id="pizzaBase"></select>
+            <select id="sauce"></select>
+            <select id="cheese"></select>
+            <select id="veggies"></select>
+            <button type="submit">Proceed to Checkout</button>
+        </form>
+    </section>
+
+    <!-- CHECKOUT -->
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <h3 id="totalPrice">Total Price: ₹0</h3>
+        <button id="payButton">Pay with Razorpay</button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Pizza Delivery Application</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
